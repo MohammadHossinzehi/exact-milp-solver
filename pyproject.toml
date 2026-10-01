@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exactmilp"
+version = "1.0.0"
+description = "Exact rational LP and MILP solver: two phase simplex, branch and bound, CPLEX LP reader"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Mohammad Hossinzehi" }]
+
+[project.scripts]
+exactmilp = "exactmilp.__main__:main"
+
+[tool.setuptools]
+packages = ["exactmilp"]
